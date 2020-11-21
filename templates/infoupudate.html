@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+
+{% block title %}首页{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/infoupdate.css') }}">
+{% endblock %}
+
+{% block main %}
+    <form action="" method="post" enctype="multipart/form-data">
+    <div class="form-group" style="text-align: center">
+        <button class="btn btn-primary">立即提交</button>
+    </div>
+    <div>&nbsp;<br>&nbsp;<br></div>
+        <div class="first">
+            <dl class="dl-horizontal">
+                <dt>用户头像：</dt><dd><input type="file" id="fileinp" name="img" accept="image/gif, image/jpeg, image/png, image/webp, image/jpg" style="width: 75px"></dd>
+                <dt>用户名：</dt><dd><input type="text" name="username" value="{{ user.username }}" style="border: none; background-color:rgba(255,255,255,0);"></dd>
+                <dt>签名：</dt><dd><input type="text" name="autograph" value="{{ user.autograph }}" style="border: none; background-color:rgba(255,255,255,0);"></dd>
+                <dt>密码：</dt><dd><input type="password" name="password" value="{{ user.password }}" style="border: none; background-color:rgba(255,255,255,0);"></dd>
+            </dl>
+            <div>&nbsp;</div>
+            <table class="table table-hover">
+            <tbody>
+                <tr><h5 class="page-title">请重新选择兴趣爱好</h5></tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="读书"> 读书
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="综艺"> 综艺
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="军事"> 军事
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="相声"> 相声
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="漫画"> 漫画
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="韩剧"> 韩剧
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="旅行"> 旅行
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="烘焙"> 烘焙
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="古玩"> 古玩
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="文学"> 文学
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="日剧"> 日剧
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="心理"> 心理
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="绘画"> 绘画
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="书法"> 书法
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="舞蹈"> 舞蹈
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="手工"> 手工
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="唱歌"> 唱歌
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="电影"> 电影
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="动漫"> 动漫
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="美剧"> 美剧
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="科技"> 科技
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="电竞"> 电竞
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="推理"> 推理
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="摄影"> 摄影
+                        </label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        {% for foo in user.life %}
+        <div class="main">
+            <dl class="dl-horizontal">
+                <dt>{{ foo.creat_time }}：</dt><dd>{{ foo.content }}</dd>
+                <dt style="margin-left: -15px">删除：
+                    <label class="radio-inline">
+                        <input type="radio" name="删除{{ foo.id }}" id="inlineRadio1" value="{{ foo.id }}">是
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="删除{{ foo.id }}" id="inlineRadio1" value="">否
+                    </label>
+                </dt><dl><img src="{{ foo.img }}" alt="" style="height: 150px; margin:10px 0 0 20px;"></dl>
+            </dl>
+
+        </div>
+    {% endfor %}
+    </form>
+{% endblock %}

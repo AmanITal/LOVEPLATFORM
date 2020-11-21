@@ -1,0 +1,54 @@
+.main ul{
+    list-style: none;
+    padding-left: 0;
+}
+.main ul li{
+    border-bottom: 2px solid #eee;
+    overflow: hidden;
+    padding: 15px 0;
+}
+.avatar-group{
+    width: 38px;
+    height: 100%;
+    float: left;
+}
+.avatar-group .avatar{
+    width:38px;
+    height: 38px;
+    border-radius: 50%;
+}
+.life-group{
+    float: left;
+    width: 660px;
+    margin-left: 10px;
+}
+.life-group .life-img img{
+    height: 150px;
+}
+.life-content a:link {
+    font-size: 12px;
+    color: #259;
+    text-decoration: none;
+}
+.life-author a:link{
+    font-size: 12px;
+    color: #259;
+    text-decoration: none;
+}
+.life-content a:visited {
+    font-size: 12px;
+    color: #259;
+    text-decoration: none;
+}
+.life-content a:hover {
+    font-size: 12px;
+    color: #999999;
+    text-decoration: none;
+}
+.life-info{
+    text-align: right;
+    color:  #259;
+}
+.life-info .life-author{
+    margin-right: 20px;
+}

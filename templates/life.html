@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}发布朋友圈{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/life.css') }}">
+{% endblock %}
+
+{% block main %}
+    <h3 class="page-title">发布朋友圈</h3>
+    <form action="{{ url_for('life') }}" enctype="multipart/form-data" method="post">
+        <div class="form-container">
+            <div class="form-group">
+                <textarea name="content" rows="10" class="form-control" placeholder="请输入"  style="background-color:rgba(255,255,255,0.45);"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fileinp">
+                    <span id="text">上传图片</span>
+                    <input type="file" id="fileinp" name="img" accept="image/gif, image/jpeg, image/png, image/webp, image/jpg">
+                </label>
+            </div>
+
+            <div class="form-group" id="fabu">
+               <button class="btn btn-primary">发布</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

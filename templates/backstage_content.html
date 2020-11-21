@@ -1,0 +1,28 @@
+{% extends 'backstage_base.html' %}
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/back/backstage_content.css') }}">
+{% endblock %}
+{% block header %}
+内容管理
+{% endblock %}
+{% block content %}
+    <ul>
+        {% for foo in life %}
+            <li>
+            <div class="avatar-group">
+                <img src="{{foo.author.img}}" alt="" class="avatar">
+            </div>
+            <div class="life-group">
+                <p class="life-content"><a href="{{ url_for('backstage_update_content',life_id=foo.id) }}">{{ foo.content }}</a></p>
+                <div class="life-img">
+                    <img src="{{foo.img }}" alt="">
+                </div>
+                <div class="life-info">
+                    <span class="life-author"><a href="{{ url_for('backstage_query', userid=foo.author_id) }}">{{foo.author.username}}</a></span>
+                    <span class="llife-time">{{ foo.creat_time }}</span>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

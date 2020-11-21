@@ -1,0 +1,767 @@
+{% extends 'base.html' %}
+
+{% block title %}性格测试{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/character.css') }}">
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('character') }}" method="post">
+        <h4 class="page-title">请完善您的兴趣爱好、性格测试</h4>
+        <div>&nbsp;<br>&nbsp;<br></div>
+        <table class="table table-hover">
+            <tbody>
+                <tr><h5 class="page-title">兴趣爱好</h5></tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="读书"> 读书
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="综艺"> 综艺
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="军事"> 军事
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="相声"> 相声
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="漫画"> 漫画
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="韩剧"> 韩剧
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="旅行"> 旅行
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="烘焙"> 烘焙
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="古玩"> 古玩
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="文学"> 文学
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="日剧"> 日剧
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="心理"> 心理
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="绘画"> 绘画
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="书法"> 书法
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="舞蹈"> 舞蹈
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="手工"> 手工
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="唱歌"> 唱歌
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="电影"> 电影
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="动漫"> 动漫
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="美剧"> 美剧
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="科技"> 科技
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="电竞"> 电竞
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="推理"> 推理
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="hobby" value="摄影"> 摄影
+                        </label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>&nbsp;<br>&nbsp;<br></div>
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <h5 class="page-title">PDP性格测试</h5>
+                </tr>
+                <tr>
+                    <th>试试回答以下的问题：</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>1．你做事是一个值得信赖的人吗？</td>
+                    <td>
+                        <label class="radio-inline">
+                          <input type="radio" name="1" id="inlineRadio1" value="1">不同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="1" id="inlineRadio1" value="2">有一点同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="1" id="inlineRadio1" value="3">差不多
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="1" id="inlineRadio1" value="4">较符合
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="1" id="inlineRadio1" value="5">非常符合
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2．你个性温和吗？</td>
+                    <td>
+                        <label class="radio-inline">
+                          <input type="radio" name="2" id="inlineRadio1" value="1">不同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="2" id="inlineRadio1" value="2">有一点同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="2" id="inlineRadio1" value="3">差不多
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="2" id="inlineRadio1" value="4">较符合
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="2" id="inlineRadio1" value="5">非常符合
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3．你有活力吗？</td>
+                    <td>
+                        <label class="radio-inline">
+                          <input type="radio" name="3" id="inlineRadio1" value="1">不同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="3" id="inlineRadio1" value="2">有一点同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="3" id="inlineRadio1" value="3">差不多
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="3" id="inlineRadio1" value="4">较符合
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="3" id="inlineRadio1" value="5">非常符合
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4．你善解人意吗？</td>
+                    <td>
+                        <label class="radio-inline">
+                          <input type="radio" name="4" id="inlineRadio1" value="1">不同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="4" id="inlineRadio1" value="2">有一点同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="4" id="inlineRadio1" value="3">差不多
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="4" id="inlineRadio1" value="4">较符合
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="4" id="inlineRadio1" value="5">非常符合
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5．你独立吗？</td>
+                    <td>
+                        <label class="radio-inline">
+                          <input type="radio" name="5" id="inlineRadio1" value="1">不同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="5" id="inlineRadio1" value="2">有一点同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="5" id="inlineRadio1" value="3">差不多
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="5" id="inlineRadio1" value="4">较符合
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="5" id="inlineRadio1" value="5">非常符合
+                        </label>
+                    </td>
+                </tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr>
+                    <td>6．你受人爱戴吗？</td>
+                    <td>
+                        <label class="radio-inline">
+                          <input type="radio" name="6" id="inlineRadio1" value="1">不同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="6" id="inlineRadio1" value="2">有一点同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="6" id="inlineRadio1" value="3">差不多
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="6" id="inlineRadio1" value="4">较符合
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="6" id="inlineRadio1" value="5">非常符合
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                        <td>7．做事认真且正直吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="7" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="7" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="7" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="7" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="7" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>8．你富有同情心吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="8" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="8" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="8" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="8" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="8" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>9．你有说服力吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="9" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="9" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="9" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="9" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="9" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>10．你大胆吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="10" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="10" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="10" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="10" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="10" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr>
+                    <td>11．你精确吗？ </td>
+                    <td>
+                        <label class="radio-inline">
+                          <input type="radio" name="11" id="inlineRadio1" value="1">不同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="11" id="inlineRadio1" value="2">有一点同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="11" id="inlineRadio1" value="3">差不多
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="11" id="inlineRadio1" value="4">较符合
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="11" id="inlineRadio1" value="5">非常符合
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                        <td>12．你适应能力强吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="12" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="12" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="12" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="12" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="12" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>13．你组织能力好吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="13" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="13" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="13" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="13" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="13" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>14．你是否积极主动？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="14" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="14" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="14" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="14" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="14" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>15．你害羞吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="15" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="15" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="15" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="15" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="15" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr>
+                    <td>16．你强势吗？ </td>
+                    <td>
+                        <label class="radio-inline">
+                          <input type="radio" name="16" id="inlineRadio1" value="1">不同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="16" id="inlineRadio1" value="2">有一点同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="16" id="inlineRadio1" value="3">差不多
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="16" id="inlineRadio1" value="4">较符合
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="16" id="inlineRadio1" value="5">非常符合
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                        <td>17．你镇定吗？ </td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="17" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="17" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="17" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="17" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="17" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>18．你勇于学习吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="18" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="18" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="18" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="18" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="18" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>19．你反应快吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="19" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="19" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="19" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="19" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="19" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>20．你外向吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="20" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="20" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="20" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="20" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="20" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr>
+                    <td>21．你注意细节吗？</td>
+                    <td>
+                        <label class="radio-inline">
+                          <input type="radio" name="21" id="inlineRadio1" value="1">不同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="21" id="inlineRadio1" value="2">有一点同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="21" id="inlineRadio1" value="3">差不多
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="21" id="inlineRadio1" value="4">较符合
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="21" id="inlineRadio1" value="5">非常符合
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                        <td>22．你爱说话吗？ </td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="22" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="22" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="22" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="22" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="22" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>23．你的协调能力好吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="23" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="23" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="23" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="23" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="23" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>24．你勤劳吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="24" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="24" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="24" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="24" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="24" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>25．你慷慨吗？ </td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="25" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="25" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="25" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="25" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="25" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr>
+                    <td>26．你小心翼翼吗？</td>
+                    <td>
+                        <label class="radio-inline">
+                          <input type="radio" name="26" id="inlineRadio1" value="1">不同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="26" id="inlineRadio1" value="2">有一点同意
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="26" id="inlineRadio1" value="3">差不多
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="26" id="inlineRadio1" value="4">较符合
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="26" id="inlineRadio1" value="5">非常符合
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                        <td>27．你令人愉快吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="27" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="27" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="27" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="27" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="27" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>28．你传统吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="28" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="28" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="28" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="28" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="28" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>29．你亲切吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="29" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="29" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="29" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="29" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="29" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+                <tr>
+                        <td>30．你工作足够有效率吗？</td>
+                        <td>
+                            <label class="radio-inline">
+                              <input type="radio" name="30" id="inlineRadio1" value="1">不同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="30" id="inlineRadio1" value="2">有一点同意
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="30" id="inlineRadio1" value="3">差不多
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="30" id="inlineRadio1" value="4">较符合
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="30" id="inlineRadio1" value="5">非常符合
+                            </label>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <div>&nbsp;<br>&nbsp;<br></div>
+        <div class="form-group" style="text-align: center">
+        <button class="btn btn-primary">立即提交</button>
+        </div>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+body{
+    background: url("../image/body_bg_page.jpg");
+    background-repeat:no-repeat;
+    backgroun-size:100% 100%;
+    background-attachment: fixed;
+}
+.page-title{
+    text-align: center;
+}
+.personal-avatar{;
+    background-color:rgba(46, 158, 183, 0.5);
+    width: 730px;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+.personal-avatar img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.personal-avatar .personal-username{
+    font-size: 45px;
+    padding: 0;
+}
+.personal-avatar .personal-autograrph{
+    font-size:15px;
+}
+.main{
+    background-color:rgba(255,255,255,0.45);
+    color: #259;
+    width: 730px;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 10px;
+}

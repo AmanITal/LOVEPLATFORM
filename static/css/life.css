@@ -1,0 +1,25 @@
+
+.form-container{
+    width: 500px;
+    margin: 0 auto;
+}
+.form-container #fabu{
+    float:right;
+}
+
+
+.form-container label{
+	position: relative;
+}
+.form-container label #fileinp{
+	left: 0;
+	top: 0;
+    opacity: 0;
+	position: absolute;
+}
+.form-container label #btn{
+	margin-right: 5px;
+}
+.form-container label #text{
+	color: #000000;
+}

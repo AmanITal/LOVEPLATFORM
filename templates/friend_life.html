@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}朋友圈{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/friend_life.css') }}">
+{% endblock %}
+
+{% block main %}
+    <img src="{{user.img}}" alt="" class="user_avatar">
+{% endblock %}
+{% block main2 %}
+    <hr>
+    <ul>
+        {% for foo in life %}
+            <li>
+            <div class="avatar-group">
+                <img src="{{foo.author.img}}" alt="" class="avatar">
+            </div>
+            <div class="life-group">
+                <p class="life-content"><a href="{{ url_for('details',life_id=foo.id) }}">{{ foo.content }}</a></p>
+                <div class="life-img">
+                    <img src="{{foo.img }}" alt="">
+                </div>
+                <div class="life-info">
+                    <span class="life-author">{{foo.author.username}}</span>
+                    <span class="llife-time">{{ foo.creat_time }}</span>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

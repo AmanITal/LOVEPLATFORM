@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}首页{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block main %}
+    <ul>
+        {% for foo in life %}
+            <li>
+            <div class="avatar-group">
+                <img src="{{foo.author.img}}" alt="" class="avatar">
+            </div>
+            <div class="life-group">
+                <p class="life-content"><a href="{{ url_for('details',life_id=foo.id) }}">{{ foo.content }}</a></p>
+                <div class="life-img">
+                    <img src="{{foo.img }}" alt="">
+                </div>
+                <div class="life-info">
+                    <span class="life-author"><a href="{{ url_for('add_friend', phone=foo.author.phone) }}">{{foo.author.username}}</a></span>
+                    <span class="llife-time">{{ foo.creat_time }}</span>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

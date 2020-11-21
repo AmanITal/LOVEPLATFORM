@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>用户注册-酸梅汤婚恋交友平台</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/regist.css') }}">
+</head>
+
+<body>
+    <h2 class="page-title">酸梅汤婚恋交友平台用户注册</h2>
+  <div class="login">
+    <form action="{{ url_for('regist') }}" enctype="multipart/form-data" method="post">
+        <label for="fileinp">
+            <span id="text">请上传头像</span>
+            <input type="file" id="fileinp" name="figure" accept="image/gif, image/jpeg, image/png, image/webp, image/jpg">
+        </label>
+    	<input type="text" name="phone" placeholder="请输入手机号" required="required" />
+    	<input type="text" name="username" placeholder="用户名" required="required" />
+        <input type="text" name="sex" placeholder="男/女" required="required" />
+        <input type="password" name="password1" placeholder="输入密码" required="required" />
+        <input type="password" name="password2" placeholder="再次输入密码" required="required" />
+    　　
+        <button type="submit" class="btn btn-primary btn-block btn-large">注册</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

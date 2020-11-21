@@ -1,0 +1,50 @@
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 270px;
+}
+.title{
+    color: #259;
+    overflow: hidden;
+}
+.title .details-author{
+    float: right;
+    margin-right: 20px;
+}
+hr{
+    margin-top: 10px;
+}
+
+.comment-list{
+    padding-left: 0px;
+}
+.comment-list li{
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    padding-top: 10px;
+}
+.comment-list .user-info .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+     margin-left: 0px;
+}
+.comment-list .user-info{
+    font-size:16px;
+    color: #9b9b9b;
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+.comment-list .user-info .username{
+    margin-left: 15px;
+}
+.comment-list .user-info .creat-time{
+    float: right;
+}
+.comment-list .checkbox{
+    margin-left: 12px;
+}
+.comment-list .checkbox .comment-content{
+    margin-left: 30px;
+}

@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9f7999a-5e01-4304-b332-68a281b341c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mangement.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emotion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/138b0c002974_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/4cb191e27378_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/5fe1a705580f_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/60ba4d81a8a7_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/7ee389454e2a_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/824f83cea63d_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/9d013c66b577_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/a18f19575d95_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/b8a2efcc44b1_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/c0ff923eabe7_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/c563f1bbe582_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/cc200f5cb19f_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/da132cbc3842_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/e617e4bff38d_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/e6252ab82cc2_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/e9d44bd2e0e5_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/BosonNLP/BosonNLP_sentiment_score.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/back/backstage_content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/back/backstage_login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/back/backstage_update_content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/back/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/back/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/back/metisMenu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/back/sb-admin-2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/character.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/details.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/friend_life.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/infoupdate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/life.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/personal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/regist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/00738dq7gy1g2eolwezsxj30ku112wpj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/1552291819469488868.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/5c87be3370b27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/7359cf0bly1g2mrjpom3nj20u01hch55.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/7903032_091201628171_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/body_bg_page.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/v2-282970c0d5b1a9a95526e12cbafb4d38_hd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/0090573436u=3523617831,1288544462&amp;fm=26&amp;gp=0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/0098230245" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/0198551119pdriudytkdtsb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/0459488265" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/06551580701553223151264.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/0655829644" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/0668278453v2-282970c0d5b1a9a95526e12cbafb4d38_hd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/0690203432pdriudytkdtsb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/0743953673" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/07628929005c87be3370b27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/0766263409" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/0847919767" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/09459797461553223151264.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/09729178981553223151264.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/097569535800738dq7gy1g2eolwezsxj30ku112wpj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/10246802287903032_091201628171_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/1081285432" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/1119487972pdriudytkdtsb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/1187170099" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/1250381919微信图片_20190512114722.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/1350040723pwersb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/1405922514" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/1440338394psbe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/1499594898" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/16098651081553223151264.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/1679048305" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/171195608300738dq7gy1g2eolwezsxj30ku112wpj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/1826002803u=3523617831,1288544462&amp;fm=26&amp;gp=0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/2346014877psb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/2647737535微信图片_20190512114722.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/2681775179" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/2714692685" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/2759314815u=3523617831,1288544462&amp;fm=26&amp;gp=0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/2787408640pdriudytkdtsb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/2800105911微信图片_20190512114648.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/2845413292" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/2907947968微信图片_20190515145302.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/3102073477微信图片_20190512115734.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/3121913777" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/3148700434psb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/3164709943图片3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/3275880604" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/3355411151psrtyesrtysb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/3365992525seryttsrysrtupsb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/3603790617" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/3605834719" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/39581961101552291819469488868.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/4120385599" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/4141801119" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/43630639691553223151264.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/4566430209psbe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/458303563200738dq7gy1g2eolwezsxj30ku112wpj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/49240275597903032_091201628171_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/5138571475" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/5270644954" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/5465995102" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/5521449400" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/5546185631psystrysrtyb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/5557590116u=3523617831,1288544462&amp;fm=26&amp;gp=0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/5573979364" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/5633840084u=3523617831,1288544462&amp;fm=26&amp;gp=0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/59446837281553223151264.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/59624396595c87be3370b27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/60469912582-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/6071588000图片5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/6079805599psb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/6110423185" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/6137624079" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/6311220736psbe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/64352417781552291819469488868.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/6443695909" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/6662392261" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/6735984059psawytutrdub.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/6840867467" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/7028431941" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/71577911957903032_091201628171_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/7340710068" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/7438551231" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/7689222818" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/7935541388psbe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/79641596101552291819469488868.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/8055757502" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/8091633464" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/80958473301553223151264.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/8139217153psartytsrub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/8641716351" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/8662334343prdutdrudsb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/8760708109pytruyduiyisb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/87833052401553223151264.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/8796281521" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/88613698551553223151264.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9090930000微信图片_20190512114648.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9107002300psb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/91413375111552291819469488868.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9150572550psartytsrub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9251203014psb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9252011862" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9410963935" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9416741391prdutdrudsb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9462510307psbe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9503567206pysertrysrsb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9799038320" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9803609541微信图片_20190512114722.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/9866043369psersyrtutyib.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/99305974892-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/E-R图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/u=3523617831,1288544462&amp;fm=26&amp;gp=0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/user_img/图片1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backstage_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backstage_content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backstage_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backstage_login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backstage_query.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backstage_update_content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/character.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/friend_life.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/infoupudate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/life.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/personal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/regist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+              <folding>
+                <element signature="e#0#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/decorators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/python虚拟环境目录/python3/virtualenv/flask-env/Lib/functools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1240">
+              <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emotion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="760">
+              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mangement.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>00000</find>
+      <find>6</find>
+      <find>option1</find>
+      <find>cha_model</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>00000</replace>
+      <replace>0</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/exts.py" />
+        <option value="$PROJECT_DIR$/static/css/login.css" />
+        <option value="$PROJECT_DIR$/static/css/life.css" />
+        <option value="$PROJECT_DIR$/decorate.py" />
+        <option value="$PROJECT_DIR$/static/css/character.css" />
+        <option value="$PROJECT_DIR$/static/css/regist.css" />
+        <option value="$PROJECT_DIR$/templates/regist.html" />
+        <option value="$PROJECT_DIR$/static/css/details.css" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/static/css/persoal.css" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/static/css/base.css" />
+        <option value="$PROJECT_DIR$/templates/details.html" />
+        <option value="$PROJECT_DIR$/Mangement.py" />
+        <option value="$PROJECT_DIR$/static/css/personal.css" />
+        <option value="$PROJECT_DIR$/static/css/infoupdate.css" />
+        <option value="$PROJECT_DIR$/templates/character.html" />
+        <option value="$PROJECT_DIR$/templates/life.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/friend_life.html" />
+        <option value="$PROJECT_DIR$/static/css/friend_life.css" />
+        <option value="$PROJECT_DIR$/templates/infoupudate.html" />
+        <option value="$PROJECT_DIR$/templates/backstage.html" />
+        <option value="$PROJECT_DIR$/static/css/back/backstage_login.css" />
+        <option value="$PROJECT_DIR$/templates/backstage_login.html" />
+        <option value="$PROJECT_DIR$/decorators.py" />
+        <option value="$PROJECT_DIR$/templates/backstage_search.html" />
+        <option value="$PROJECT_DIR$/templates/backstage_base.html" />
+        <option value="$PROJECT_DIR$/static/css/index.css" />
+        <option value="$PROJECT_DIR$/static/css/back/backstage_content.css" />
+        <option value="$PROJECT_DIR$/static/css/back/backstage_update_content.css" />
+        <option value="$PROJECT_DIR$/templates/backstage_query.html" />
+        <option value="$PROJECT_DIR$/templates/backstage_update_content.html" />
+        <option value="$PROJECT_DIR$/compute_function.py" />
+        <option value="D:/python虚拟环境目录/python3/virtualenv/flask-env/Lib/site-packages/jieba/_compat.py" />
+        <option value="$PROJECT_DIR$/templates/backstage_index.html" />
+        <option value="$PROJECT_DIR$/emotion.py" />
+        <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/templates/backstage_content.html" />
+        <option value="$PROJECT_DIR$/templates/personal.html" />
+        <option value="$PROJECT_DIR$/templates/search.html" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="656" />
+    <option name="width" value="652" />
+    <option name="height" value="748" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\PythonProject\project\static\BosonNLP" />
+      <recent name="G:\PythonProject\project\static\css\back" />
+      <recent name="G:\PythonProject\project\static\css" />
+      <recent name="G:\PythonProject\project\static\image" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="emotion" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/emotion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="project" type="Python.FlaskServer">
+      <module name="project" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Python.emotion" />
+        <item itemvalue="Python.config" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9f7999a-5e01-4304-b332-68a281b341c5" name="Default Changelist" comment="" />
+      <created>1556077446125</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556077446125</updated>
+      <workItem from="1556077448868" duration="934000" />
+      <workItem from="1556085462622" duration="14568000" />
+      <workItem from="1556153626681" duration="10737000" />
+      <workItem from="1556166310903" duration="23761000" />
+      <workItem from="1556233498058" duration="12309000" />
+      <workItem from="1556250854452" duration="88000" />
+      <workItem from="1556255898249" duration="12916000" />
+      <workItem from="1556270300346" duration="13668000" />
+      <workItem from="1556289475566" duration="272000" />
+      <workItem from="1556328022829" duration="21142000" />
+      <workItem from="1556410425984" duration="23570000" />
+      <workItem from="1556439608817" duration="5693000" />
+      <workItem from="1556497197099" duration="30954000" />
+      <workItem from="1556586120080" duration="34634000" />
+      <workItem from="1556669992281" duration="39368000" />
+      <workItem from="1556759715983" duration="22088000" />
+      <workItem from="1556839773751" duration="19789000" />
+      <workItem from="1556938958132" duration="1583000" />
+      <workItem from="1557053396371" duration="2354000" />
+      <workItem from="1557105849350" duration="3907000" />
+      <workItem from="1557196726355" duration="1332000" />
+      <workItem from="1557631985412" duration="1232000" />
+      <workItem from="1557719481787" duration="590000" />
+      <workItem from="1557838184004" duration="628000" />
+      <workItem from="1557903050126" duration="599000" />
+      <workItem from="1557912554405" duration="1027000" />
+      <workItem from="1557975797352" duration="720000" />
+      <workItem from="1558439074598" duration="2363000" />
+      <workItem from="1560070647426" duration="512000" />
+      <workItem from="1560135510370" duration="596000" />
+      <workItem from="1560172910451" duration="222000" />
+      <workItem from="1562912492953" duration="1410000" />
+      <workItem from="1566463687322" duration="444000" />
+      <workItem from="1584525802695" duration="702000" />
+      <workItem from="1584534488708" duration="82000" />
+      <workItem from="1585821740308" duration="160000" />
+      <workItem from="1587565986924" duration="1089000" />
+      <workItem from="1587611136553" duration="289000" />
+      <workItem from="1588841245998" duration="1147000" />
+      <workItem from="1590506333411" duration="41000" />
+      <workItem from="1592321370145" duration="129000" />
+      <workItem from="1598079132419" duration="4938000" />
+      <workItem from="1598135447551" duration="598000" />
+      <workItem from="1598250677802" duration="2116000" />
+      <workItem from="1598757185451" duration="291000" />
+      <workItem from="1600834266878" duration="2187000" />
+      <workItem from="1600862664077" duration="340000" />
+      <workItem from="1600872282262" duration="582000" />
+      <workItem from="1601116835353" duration="876000" />
+      <workItem from="1601127079660" duration="2890000" />
+      <workItem from="1601132254508" duration="616000" />
+      <workItem from="1601298736561" duration="552000" />
+      <workItem from="1602585133312" duration="32000" />
+      <workItem from="1602600966568" duration="1217000" />
+      <workItem from="1602849612622" duration="116000" />
+      <workItem from="1602915661218" duration="240000" />
+      <workItem from="1603613854628" duration="98000" />
+      <workItem from="1603896792505" duration="16000" />
+      <workItem from="1605538491248" duration="1050000" />
+      <workItem from="1605943691222" duration="332000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="328736000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12420382" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24613003" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2939068" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3478261" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2467167" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2788296" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/project$project.coverage" NAME="project Coverage Results" MODIFIED="1603629384885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1605538525141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/project$emotion.coverage" NAME="emotion Coverage Results" MODIFIED="1556848140714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$config.coverage" NAME="config Coverage Results" MODIFIED="1556183095570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/css/life.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/regist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/image/5c6cc65c34bca.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/css/personal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/infoupdate.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/regist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" column="83" lean-forward="true" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/life.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="117" selection-start-line="18" selection-start-column="117" selection-end-line="18" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/friend_life.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/alembic.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-631" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1655">
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/README">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/script.py.mako">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/back/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/back/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/back/sb-admin-2.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/back/metisMenu.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backstage_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/infoupudate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/character.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="743" column="36" selection-start-line="743" selection-start-column="36" selection-end-line="743" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/back/backstage_update_content.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/BosonNLP/BosonNLP_sentiment_score.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/python虚拟环境目录/python3/virtualenv/flask-env/Lib/site-packages/jieba/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="281" selection-start-line="281" selection-end-line="281" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python虚拟环境目录/python3/virtualenv/flask-env/Lib/site-packages/jieba/_compat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backstage_update_content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backstage_content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backstage_query.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="22" column="150" selection-start-line="22" selection-start-column="150" selection-end-line="22" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backstage_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/personal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1640">
+          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/friend_life.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/versions/4cb191e27378_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/character.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/details.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-219">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/back/backstage_login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backstage_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/back/backstage_content.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python虚拟环境目录/python3/virtualenv/flask-env/Lib/functools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1240">
+          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emotion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mangement.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

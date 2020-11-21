@@ -1,0 +1,25 @@
+body{
+    background: url("../image/body_bg_page.jpg");
+    background-repeat:no-repeat;
+    backgroun-size:100% 100%;
+    background-attachment: fixed;
+}
+.page-title{
+    text-align: center;
+}
+.main{
+    background: #fff;
+    background-color:rgba(255,255,255,0.45);
+    width: 730px;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 10px;
+}
+.main2{
+    background: #fff;
+    background-color:rgba(255,255,255,0.45);
+    width: 730px;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 0 10px;
+}

@@ -1,0 +1,37 @@
+{% extends 'backstage_base.html' %}
+{% block header %}
+用户查询
+{% endblock %}
+{% block content %}
+    <form action="{{ url_for('backstage_update', user_id=user.id) }}" method="post">
+    <div class="form-group" style="text-align: left">
+        <button class="btn btn-primary" type="submit">提交</button>
+        <button class="btn btn-danger" type="button"><a href="{{ url_for('backstage_deluser', user_id=user.id) }}" style="color: #fff; text-decoration-line: none">删除用户</a></button>
+    </div>
+    <div><hr><br></div>
+        <div class="first">
+            <dl class="dl-horizontal">
+                <dt>用户名：</dt><dd><input type="text" name="username" value="{{ user.username }}" style="border: none; rgba(255,255,255,0);"></dd>
+                <dt>签名：</dt><dd><input type="text" name="autograph" value="{{ user.autograph }}" style="border: none; rgba(255,255,255,0);"></dd>
+                <dt>密码：</dt><dd><input type="text" name="password" value="{{ user.password }}" style="border: none; rgba(255,255,255,0);"></dd>
+            </dl>
+            <div><hr><hr><br></div>
+        </div>
+        {% for foo in user.life %}
+        <div class="main">
+            <dl class="dl-horizontal">
+                <dt>{{ foo.creat_time }}：</dt><dd><a href="{{ url_for('backstage_update_content',life_id=foo.id) }}" style="text-decoration-line: none">{{ foo.content }}</a></dd>
+                <dt style="margin-left: -15px">删除：
+                    <label class="radio-inline">
+                        <input type="radio" name="删除{{ foo.id }}" id="inlineRadio1" value="{{ foo.id }}">是
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="删除{{ foo.id }}" id="inlineRadio1" value="">否
+                    </label>
+                </dt><dl><img src="{{ foo.img }}" alt="" style="height: 150px; margin:10px 0 0 20px;"></dl>
+            </dl>
+        </div>
+        <hr>
+    {% endfor %}
+    </form>
+{% endblock %}

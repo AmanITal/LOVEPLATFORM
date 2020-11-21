@@ -1,0 +1,40 @@
+{% extends 'backstage_base.html' %}
+{% block header %}
+内容管理
+{% endblock %}
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/back/backstage_update_content.css') }}">
+{% endblock %}
+{% block content %}
+    <form action="{{ url_for('backstage_update_content', life_id=life.id) }}" method="post">
+        <div class="title">
+            <p class="details-content">{{ life.content }}</p>
+            <div style="width: 710px; overflow: hidden; text-align: center; margin-bottom: 10px">
+                <img src="{{ life.img }}" alt="" class="imgae" style="height: 250px">
+            </div>
+                <span class="details-author">楼主:&nbsp;{{ life.author.username }}&nbsp;&nbsp;&nbsp;{{ life.creat_time}}</span>
+        </div>
+        <hr>
+        <div class="form-group" style="text-align: left">
+            <button class="btn btn-danger" type="submit">删除选中评论</button>
+        </div>
+        <ul class="comment-list">
+            {% for foo in life.comments %}
+                <li>
+                    <div class="user-info">
+                        <img class="avatar" src="{{ foo.user.img }}" alt="">
+                        <span class="username">{{ foo.user.username }}</span>
+                        <span class="creat-time">{{ foo.creat_time }}</span>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" name="删除" value="{{ foo.id }}">
+                        <p class="comment-content">{{ foo.content }}</p>
+                      </label>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </form>
+
+{% endblock %}
